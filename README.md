@@ -33,7 +33,7 @@ This is a simple trading bot simulation that executes trades based on predefined
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/trading-bot-simulation.git
+   git clone https://github.com/DeekshaTiwari5/trading-bot
    cd trading-bot-simulation
 
 2. Install dependencies:
