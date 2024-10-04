@@ -1,26 +1,55 @@
-# Trading Bot Backend
+# Trading Bot Simulation
 
-## Description
-This is a backend application that simulates a basic trading bot for a hypothetical stock market. It monitors stock price changes and makes buy/sell decisions based on predefined strategies.
+This is a simple trading bot simulation that executes trades based on predefined rules and conditions while tracking its profit/loss and performance metrics.
+
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Trading Logic](#trading-logic)
+- [Profit/Loss Tracking](#profitloss-tracking)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
-- Mock stock price generation.
-- Trading logic (buy when price drops by 2%, sell when price increases by 3%).
-- Profit/loss tracking with trade history.
+- Continuously monitors stock price changes using mock data.
+- Executes trades based on simple trading strategies.
+- Tracks profit/loss metrics for trades made.
+- Provides an API endpoint to retrieve trading summary.
 
-## Setup
+## Technologies Used
+- Node.js
+- Express
+- dotenv (for environment variables)
 
-1. Install dependencies:
+## Getting Started
 
-```bash
-   npm install
+### Prerequisites
+- Node.js (v14 or later)
+- npm (Node package manager)
 
-2.Run the application:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/trading-bot-simulation.git
+   cd trading-bot-simulation
 
-```bash
-Copy code
-npm start
-API Endpoints:
+2. Install dependencies:
 
-/api/stock-price: Get the current stock price.
-/api/report: Get a summary of trades made by the bot.
+ ```bash
+-npm install
+
+3.  .env file 
+PORT=8000
+
+4.  Start the server:
+ **npm start
+
+The server will run on the specified port (default: 8000).
+ You can access the API using the following endpoint:[ http://localhost:8000/api/summary]
+API Endpoints
+GET /api/summary: Returns the current profit/loss
+
+summary of the trading bot.
